@@ -1,0 +1,22 @@
+{
+  "name": "dom-comment-scanner",
+  "version": "0.1.0",
+  "description": "Tampermonkey userscript for local-only rendered DOM comment, hidden field, attribute, and internal URL review.",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "verify": "python3 scripts/verify_userscript.py"
+  },
+  "keywords": [
+    "tampermonkey",
+    "userscript",
+    "dom-scanner",
+    "html-comments",
+    "hidden-fields",
+    "security-testing",
+    "bug-bounty",
+    "local-only"
+  ],
+  "license": "MIT",
+  "devDependencies": {}
+}

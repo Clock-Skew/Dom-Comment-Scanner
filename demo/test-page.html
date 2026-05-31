@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DOM Comment Scanner Demo</title>
+    <!-- TODO internal staging endpoint https://staging.internal.example.test/api/users?token=demo -->
+  </head>
+  <body>
+    <h1>Demo Page</h1>
+    <form action="/api/admin/session">
+      <input type="hidden" name="csrf_token" value="eyJhbGciOiJIUzI1NiJ9.demo.signature">
+      <input type="hidden" name="redirect_url" value="http://localhost:8787/admin">
+      <input type="text" name="email">
+    </form>
+    <div data-api-key="demo-redacted" data-endpoint="/api/internal/report" onclick="return false">
+      Demo container
+    </div>
+    <a href="https://dev.internal.example.test/v1/report?id=123">Internal report</a>
+  </body>
+</html>
